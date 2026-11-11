@@ -1,0 +1,9 @@
+{
+  "base": "b2ea1489fd7decaa83e467febb1e20aa9de8b4d5",
+  "candidate": "29fefa9a9cad3df59fbb8c3bd1ebe6dfed75fd88",
+  "go": "go1.27.3 linux/amd64",
+  "make_vet": "PASS",
+  "make_build": "PASS",
+  "full_make_test": "NOT GREEN; see ../preflight.md",
+  "targeted_regressions_and_race": "PASS"
+}

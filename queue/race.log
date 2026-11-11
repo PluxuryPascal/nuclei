@@ -1,0 +1,122 @@
+=== RUN   TestExecutionTimeoutAfterAdmission
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/admission-budget-includes-resize
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/quick-script-after-queue
+    queue_timeout_test.go:107: queue release=200ms, JS budget=300ms, elapsed=360.398142ms, started=true, result=map[proof:matched-evidence response:true success:true], error=<nil>
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-in-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-cancels-queued-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/admission-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-during-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/nonpositive-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/execution-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/quick-script-after-queue
+    queue_timeout_test.go:107: queue release=200ms, JS budget=300ms, elapsed=363.012393ms, started=true, result=map[response:matched-evidence success:true], error=<nil>
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-in-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-cancels-queued-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/admission-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-during-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/nonpositive-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/execution-budget
+--- PASS: TestExecutionTimeoutAfterAdmission (1.61s)
+    --- PASS: TestExecutionTimeoutAfterAdmission/pooled (0.83s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/admission-budget-includes-resize (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/quick-script-after-queue (0.52s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-in-queue (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-cancels-queued-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/admission-budget (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-during-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/nonpositive-budget (0.00s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/execution-budget (0.05s)
+    --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled (0.78s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/quick-script-after-queue (0.52s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-in-queue (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-cancels-queued-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/admission-budget (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-during-execution (0.06s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/nonpositive-budget (0.00s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/execution-budget (0.05s)
+=== RUN   TestExecuteProgramWithoutTimeoutVariants
+--- PASS: TestExecuteProgramWithoutTimeoutVariants (0.00s)
+=== RUN   TestExecutionTimeoutAfterAdmission
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/admission-budget-includes-resize
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/quick-script-after-queue
+    queue_timeout_test.go:107: queue release=200ms, JS budget=300ms, elapsed=351.094063ms, started=true, result=map[proof:matched-evidence response:true success:true], error=<nil>
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-in-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-cancels-queued-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/admission-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-during-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/nonpositive-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/execution-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/quick-script-after-queue
+    queue_timeout_test.go:107: queue release=200ms, JS budget=300ms, elapsed=357.127627ms, started=true, result=map[response:matched-evidence success:true], error=<nil>
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-in-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-cancels-queued-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/admission-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-during-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/nonpositive-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/execution-budget
+--- PASS: TestExecutionTimeoutAfterAdmission (1.60s)
+    --- PASS: TestExecutionTimeoutAfterAdmission/pooled (0.82s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/admission-budget-includes-resize (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/quick-script-after-queue (0.50s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-in-queue (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-cancels-queued-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/admission-budget (0.06s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-during-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/nonpositive-budget (0.00s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/execution-budget (0.05s)
+    --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled (0.78s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/quick-script-after-queue (0.51s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-in-queue (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-cancels-queued-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/admission-budget (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-during-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/nonpositive-budget (0.00s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/execution-budget (0.06s)
+=== RUN   TestExecuteProgramWithoutTimeoutVariants
+--- PASS: TestExecuteProgramWithoutTimeoutVariants (0.01s)
+=== RUN   TestExecutionTimeoutAfterAdmission
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/admission-budget-includes-resize
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/quick-script-after-queue
+    queue_timeout_test.go:107: queue release=200ms, JS budget=300ms, elapsed=350.003845ms, started=true, result=map[proof:matched-evidence response:true success:true], error=<nil>
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-in-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-cancels-queued-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/admission-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-during-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/nonpositive-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/execution-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/quick-script-after-queue
+    queue_timeout_test.go:107: queue release=200ms, JS budget=300ms, elapsed=355.27834ms, started=true, result=map[response:matched-evidence success:true], error=<nil>
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-in-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-cancels-queued-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/admission-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-during-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/nonpositive-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/execution-budget
+--- PASS: TestExecutionTimeoutAfterAdmission (1.58s)
+    --- PASS: TestExecutionTimeoutAfterAdmission/pooled (0.81s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/admission-budget-includes-resize (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/quick-script-after-queue (0.50s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-in-queue (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-cancels-queued-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/admission-budget (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-during-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/nonpositive-budget (0.00s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/execution-budget (0.05s)
+    --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled (0.76s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/quick-script-after-queue (0.51s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-in-queue (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-cancels-queued-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/admission-budget (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-during-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/nonpositive-budget (0.00s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/execution-budget (0.05s)
+=== RUN   TestExecuteProgramWithoutTimeoutVariants
+--- PASS: TestExecuteProgramWithoutTimeoutVariants (0.00s)
+PASS
+ok  	github.com/projectdiscovery/nuclei/v3/pkg/js/compiler	9.266s

@@ -1,0 +1,35 @@
+=== RUN   TestSSHInfoCancellation
+=== RUN   TestSSHInfoCancellation/peer-close-control
+    ssh_cancel_test.go:124: call returned after 5.793496ms: ssh: handshake failed: EOF
+=== RUN   TestSSHInfoCancellation/cancel-in-flight
+    ssh_cancel_test.go:129: SSH call still running 1s after trigger (cancel=true)
+    ssh_cancel_test.go:137: TCP connection remains open after cancellation
+--- FAIL: TestSSHInfoCancellation (1.51s)
+    --- PASS: TestSSHInfoCancellation/peer-close-control (0.01s)
+    --- FAIL: TestSSHInfoCancellation/cancel-in-flight (1.50s)
+=== RUN   TestJSDeadlineClosesSSHConnection
+    ssh_cancel_test.go:171: JS call returned after 1.251525782s: nuclei js runtime: program failed to terminate after interrupt: context deadline exceeded
+    ssh_cancel_test.go:189: JS returned on timeout, but underlying SSH TCP connection is still open
+--- FAIL: TestJSDeadlineClosesSSHConnection (1.75s)
+=== RUN   TestSSHInfoAlreadyCanceled
+    ssh_cancel_test.go:219: error = ssh: handshake failed: read tcp 127.0.0.1:44732->127.0.0.1:40269: i/o timeout, want context.Canceled
+--- FAIL: TestSSHInfoAlreadyCanceled (10.00s)
+=== RUN   TestSSHInfoSuccessAndCache
+    ssh_cancel_test.go:245: cached canceled call = <nil>
+--- FAIL: TestSSHInfoSuccessAndCache (0.01s)
+=== RUN   TestSSHInfoConcurrentCancellation
+    ssh_cancel_test.go:271: second caller did not get an independent connection: accept tcp 127.0.0.1:43559: i/o timeout
+--- FAIL: TestSSHInfoConcurrentCancellation (1.00s)
+=== RUN   TestSSHInfoRetriesAfterError
+=== RUN   TestSSHInfoRetriesAfterError/cancel=false
+=== RUN   TestSSHInfoRetriesAfterError/cancel=true
+    ssh_cancel_test.go:329: first call did not return
+--- FAIL: TestSSHInfoRetriesAfterError (1.01s)
+    --- PASS: TestSSHInfoRetriesAfterError/cancel=false (0.01s)
+    --- FAIL: TestSSHInfoRetriesAfterError/cancel=true (1.00s)
+=== RUN   TestSSHInfoDeadlineClosesConnection
+    ssh_cancel_test.go:388: deadline did not stop the SSH handshake
+--- FAIL: TestSSHInfoDeadlineClosesConnection (1.00s)
+FAIL
+FAIL	github.com/projectdiscovery/nuclei/v3/pkg/js/libs/ssh	16.692s
+FAIL

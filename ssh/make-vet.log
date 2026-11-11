@@ -1,0 +1,4 @@
+go mod download
+go mod verify
+all modules verified
+go vet ./...

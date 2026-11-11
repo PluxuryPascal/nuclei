@@ -1,0 +1,29 @@
+=== RUN   TestSSHInfoCancellation
+=== RUN   TestSSHInfoCancellation/peer-close-control
+    ssh_cancel_test.go:124: call returned after 84.476µs: ssh: handshake failed: read tcp 127.0.0.1:51116->127.0.0.1:35379: read: connection reset by peer
+=== RUN   TestSSHInfoCancellation/cancel-in-flight
+    ssh_cancel_test.go:124: call returned after 78.496µs: context canceled
+    ssh_cancel_test.go:135: client closed TCP after cancellation
+--- PASS: TestSSHInfoCancellation (0.00s)
+    --- PASS: TestSSHInfoCancellation/peer-close-control (0.00s)
+    --- PASS: TestSSHInfoCancellation/cancel-in-flight (0.00s)
+=== RUN   TestJSDeadlineClosesSSHConnection
+    ssh_cancel_test.go:171: JS call returned after 250.541024ms: context deadline exceeded
+    ssh_cancel_test.go:187: JS deadline closed the underlying TCP connection
+--- PASS: TestJSDeadlineClosesSSHConnection (0.25s)
+=== RUN   TestSSHInfoAlreadyCanceled
+--- PASS: TestSSHInfoAlreadyCanceled (0.00s)
+=== RUN   TestSSHInfoSuccessAndCache
+--- PASS: TestSSHInfoSuccessAndCache (0.00s)
+=== RUN   TestSSHInfoConcurrentCancellation
+--- PASS: TestSSHInfoConcurrentCancellation (0.03s)
+=== RUN   TestSSHInfoRetriesAfterError
+=== RUN   TestSSHInfoRetriesAfterError/cancel=false
+=== RUN   TestSSHInfoRetriesAfterError/cancel=true
+--- PASS: TestSSHInfoRetriesAfterError (0.00s)
+    --- PASS: TestSSHInfoRetriesAfterError/cancel=false (0.00s)
+    --- PASS: TestSSHInfoRetriesAfterError/cancel=true (0.00s)
+=== RUN   TestSSHInfoDeadlineClosesConnection
+--- PASS: TestSSHInfoDeadlineClosesConnection (0.25s)
+PASS
+ok  	github.com/projectdiscovery/nuclei/v3/pkg/js/libs/ssh	0.610s

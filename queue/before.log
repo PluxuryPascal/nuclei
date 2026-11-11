@@ -1,0 +1,53 @@
+=== RUN   TestExecutionTimeoutAfterAdmission
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/admission-budget-includes-resize
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/quick-script-after-queue
+    queue_timeout_test.go:107: queue release=200ms, JS budget=300ms, elapsed=300.907424ms, started=true, result=map[error:context deadline exceeded at <eval>:3:54(10)], error=context deadline exceeded at <eval>:3:54(10)
+    queue_timeout_test.go:108: 
+        	Error Trace:	/tmp/nuclei/pkg/js/compiler/queue_timeout_test.go:108
+        	Error:      	Received unexpected error:
+        	            	context deadline exceeded at <eval>:3:54(10)
+        	Test:       	TestExecutionTimeoutAfterAdmission/pooled/quick-script-after-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-in-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-cancels-queued-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/admission-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-during-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/nonpositive-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/pooled/execution-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/quick-script-after-queue
+    queue_timeout_test.go:107: queue release=200ms, JS budget=300ms, elapsed=300.467118ms, started=true, result=map[error:context deadline exceeded at <eval>:1:51(11)], error=context deadline exceeded at <eval>:1:51(11)
+    queue_timeout_test.go:108: 
+        	Error Trace:	/tmp/nuclei/pkg/js/compiler/queue_timeout_test.go:108
+        	Error:      	Received unexpected error:
+        	            	context deadline exceeded at <eval>:1:51(11)
+        	Test:       	TestExecutionTimeoutAfterAdmission/non-pooled/quick-script-after-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-in-queue
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-cancels-queued-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/admission-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-during-execution
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/nonpositive-budget
+=== RUN   TestExecutionTimeoutAfterAdmission/non-pooled/execution-budget
+--- FAIL: TestExecutionTimeoutAfterAdmission (1.46s)
+    --- FAIL: TestExecutionTimeoutAfterAdmission/pooled (0.75s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/admission-budget-includes-resize (0.05s)
+        --- FAIL: TestExecutionTimeoutAfterAdmission/pooled/quick-script-after-queue (0.45s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-in-queue (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-cancels-queued-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/admission-budget (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/caller-deadline-during-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/nonpositive-budget (0.00s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/pooled/execution-budget (0.05s)
+    --- FAIL: TestExecutionTimeoutAfterAdmission/non-pooled (0.70s)
+        --- FAIL: TestExecutionTimeoutAfterAdmission/non-pooled/quick-script-after-queue (0.45s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-in-queue (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-cancels-queued-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/admission-budget (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/caller-deadline-during-execution (0.05s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/nonpositive-budget (0.00s)
+        --- PASS: TestExecutionTimeoutAfterAdmission/non-pooled/execution-budget (0.05s)
+=== RUN   TestExecuteProgramWithoutTimeoutVariants
+--- PASS: TestExecuteProgramWithoutTimeoutVariants (0.00s)
+FAIL
+FAIL	github.com/projectdiscovery/nuclei/v3/pkg/js/compiler	1.547s
+FAIL

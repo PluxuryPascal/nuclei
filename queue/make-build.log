@@ -1,0 +1,4 @@
+rm -f './bin/nuclei' 2>/dev/null
+CGO_ENABLED=0 GOEXPERIMENT=greenteagc GODEBUG=tlssha1=1 go build \
+	-trimpath -pgo=auto -ldflags '-s -w -extldflags "-static"'  \
+	-o './bin/nuclei' cmd/nuclei/main.go
